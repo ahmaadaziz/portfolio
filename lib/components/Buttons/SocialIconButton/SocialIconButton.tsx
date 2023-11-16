@@ -2,7 +2,6 @@
 
 import { IconProp } from "@fortawesome/fontawesome-svg-core";
 import Svg from "../../SvgComp/Svg";
-import { SlideUpVariants } from "@/lib/utils/variants";
 
 import { useGlobalContext } from "@/app/context/store";
 import { IconStyleProps } from "../../SvgComp/SvgStyles";

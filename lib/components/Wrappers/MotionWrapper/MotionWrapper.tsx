@@ -15,6 +15,7 @@ const MotionWrapper: FC<IProps> = ({ children, justify, pt, width }) => (
     pt={pt}
     width={width}
     variants={SlideUpVariants}
+    transition={{ type: "tween", stiffness: 400, damping: 17, ease: "easeOut", duration: 0.5 }}
   >
     {children}
   </MotionWrapperStyles>

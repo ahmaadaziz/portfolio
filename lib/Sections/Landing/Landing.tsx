@@ -9,17 +9,13 @@ import BasicButton from "../../components/Buttons/BasicButton/BasicButton";
 import Heading1 from "../../components/Texts/Heading1/Heading1";
 import Paragraph from "../../components/Texts/Paragraph/Paragraph";
 import Heading2 from "@/lib/components/Texts/Heading2/Heading2";
-import Svg from "@/lib/components/SvgComp/Svg";
 import {
   faGithub,
   faLinkedin,
   faInstagram,
 } from "@fortawesome/free-brands-svg-icons";
-import SocialButton from "@/lib/components/Buttons/SocialButton/SocialButton";
 
-import Box1 from "../../../public/Box1.jpeg";
 import SocialIconButton from "@/lib/components/Buttons/SocialIconButton/SocialIconButton";
-import { motion } from "framer-motion";
 import MotionWrapper from "@/lib/components/Wrappers/MotionWrapper/MotionWrapper";
 
 const Landing = () => {

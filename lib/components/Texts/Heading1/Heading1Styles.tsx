@@ -2,10 +2,10 @@
 
 import { motion } from "framer-motion";
 import styled from "styled-components";
+import { HeadingStyleProps } from "../HeadingProps";
 
-export interface IProps {
-    mainHeading: boolean;
-    boldness: number
+export interface IProps extends HeadingStyleProps {
+    mainHeading?: boolean;
 }
 
 const Heading1Styles = styled(motion.h1)<IProps>`

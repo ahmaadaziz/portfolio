@@ -1,9 +1,8 @@
 import ParagraphStyles from "@/lib/components/Texts/Paragraph/ParagraphStyles";
 import { SlideUpVariants } from "@/lib/utils/variants";
+import { HeadingProps } from "../HeadingProps";
 
-interface IProps {
-  text: string;
-}
+interface IProps extends HeadingProps {}
 
 const Paragraph = ({ text }: IProps) => {
   return (
