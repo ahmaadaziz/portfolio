@@ -5,6 +5,7 @@ import BasicButtonStyles from "./BasicButtonStyles";
 import { Props } from "./BasicButtonStyles";
 import { SlideUpVariants } from "@/lib/utils/variants";
 import { ButtonProps } from "../ButtonProps";
+import { SlideUpEase } from "@/lib/utils/transitions";
 
 interface IProps extends Props, ButtonProps {}
 
@@ -20,7 +21,7 @@ const BasicButton = ({ secondary, text, href, marginTop, rounded }: IProps) => {
       onMouseEnter={() => setCursorVariant("button")}
       onMouseLeave={() => setCursorVariant("default")}
       whileTap={{ scale: 0.9 }}
-      transition={{ type: "tween", stiffness: 400, damping: 17 }}
+      transition={SlideUpEase}
     >
       {text}
     </BasicButtonStyles>

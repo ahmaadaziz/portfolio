@@ -4,6 +4,7 @@ import { SlideUpVariants } from "@/lib/utils/variants";
 import { FC } from "react";
 import MotionWrapperStyles from "./MotionWrapperStyles";
 import { StyleProps } from "./MotionWrapperStyles";
+import { SlideUpEase } from "@/lib/utils/transitions";
 
 interface IProps extends StyleProps {
   children: React.ReactNode;
@@ -15,7 +16,7 @@ const MotionWrapper: FC<IProps> = ({ children, justify, pt, width }) => (
     pt={pt}
     width={width}
     variants={SlideUpVariants}
-    transition={{ type: "tween", stiffness: 400, damping: 17, ease: "easeOut", duration: 0.5 }}
+    transition={SlideUpEase}
   >
     {children}
   </MotionWrapperStyles>

@@ -1,7 +1,8 @@
 import Heading1Styles from "@/lib/components/Texts/Heading1/Heading1Styles";
 import { IProps as Heading1StyleProps } from "@/lib/components/Texts/Heading1/Heading1Styles";
 import { SlideUpVariants } from "@/lib/utils/variants";
-import {HeadingProps, HeadingStyleProps} from "../HeadingProps";
+import { HeadingProps, HeadingStyleProps } from "../HeadingProps";
+import { SlideUpEase } from "@/lib/utils/transitions";
 
 interface Props extends HeadingProps, HeadingStyleProps, Heading1StyleProps {}
 
@@ -11,14 +12,7 @@ const Heading1 = ({ text, mainHeading, boldness }: Props) => {
       mainHeading={mainHeading}
       boldness={boldness}
       variants={SlideUpVariants}
-      // transition={{ type: "tween", stiffness: 400, damping: 17 }}
-      transition={{
-        type: "tween",
-        stiffness: 400,
-        damping: 17,
-        ease: "easeOut",
-        duration: 0.5,
-      }}
+      transition={SlideUpEase}
     >
       {text}
     </Heading1Styles>

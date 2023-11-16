@@ -2,6 +2,7 @@ import { SlideUpVariants } from "@/lib/utils/variants";
 import Heading2Styles from "./Heading2Styles";
 import { HeadingProps, HeadingStyleProps } from "../HeadingProps";
 import { IProps } from "./Heading2Styles";
+import { SlideUpEase } from "@/lib/utils/transitions";
 
 interface Props extends HeadingProps, HeadingStyleProps, IProps {}
 
@@ -10,7 +11,7 @@ const Heading2 = ({ text, boldness }: Props) => {
     <Heading2Styles
       boldness={boldness}
       variants={SlideUpVariants}
-      transition={{ type: "tween", stiffness: 400, damping: 17 }}
+      transition={SlideUpEase}
     >
       {text}
     </Heading2Styles>
