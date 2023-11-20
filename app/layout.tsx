@@ -1,5 +1,5 @@
 import { GlobalContextProvider } from "./context/store";
-import StyledComponentsRegistry from '@/lib/utils/registry';
+import StyledComponentsRegistry from "@/lib/utils/registry";
 import localFont from "next/font/local";
 
 import { config } from "@fortawesome/fontawesome-svg-core";
@@ -97,13 +97,16 @@ export default function RootLayout({
   return (
     <html lang="en">
       <head />
-      <body className={`${Tommy.className} ${Okine.className}`} style={{overflow: "hidden"}}>
+      <body
+        className={`${Tommy.className} ${Okine.className}`}
+        style={{ overflow: "hidden" }}
+      >
         <StyledComponentsRegistry>
           <GlobalContextProvider>
             <CustomCursor />
             <GlobalWrapper>
-              <Navbar />
-              {children}
+                <Navbar />
+                {children}
             </GlobalWrapper>
           </GlobalContextProvider>
         </StyledComponentsRegistry>

@@ -1,12 +1,17 @@
-import IntroWrapper from "@/lib/components/Wrappers/IntroWrapper/IntroWrapper";
-import BasicButton from "@/lib/components/Buttons/BasicButton/BasicButton";
+"use client"
+
 import Landing from "@/lib/Sections/Landing/Landing";
-import Link from "@/lib/components/Link/Link";
+import PageTransitionWrapper from "@/lib/components/Wrappers/PageTrasitionWrapper/PageTransitionWrapper";
+import { AnimatePresence } from "framer-motion";
 
 export default function Home() {
   return (
     <div>
-      <Landing />
+      <AnimatePresence mode="wait">
+        <PageTransitionWrapper>
+          <Landing />
+        </PageTransitionWrapper>
+      </AnimatePresence>
     </div>
   );
 }
