@@ -6,6 +6,7 @@ import { useGlobalContext } from "@/app/context/store";
 
 import NavMenuStyles from "@/lib/components/NavMenu/NavMenuStyles";
 import NavMenuContainer from "./NavMenuContainer";
+import { NavSlideDown } from "@/lib/utils/transitions";
 
 interface IProps {
   children: ReactNode;
@@ -32,6 +33,7 @@ const NavMenu = ({ children }: IProps) => {
           variants={variants}
           animate={navbarOpen ? "visible" : "hidden"}
           exit={"hidden"}
+          transition={NavSlideDown}
         >
           <NavMenuContainer>{children}</NavMenuContainer>
         </NavMenuStyles>

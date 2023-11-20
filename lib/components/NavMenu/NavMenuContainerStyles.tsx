@@ -12,9 +12,9 @@ const NavMenuContainerStyles = styled(motion.div)`
 
   ${`@media only screen and (max-width: 1025px)`} {
     grid-template-columns: 1fr;
-grid-template-rows: 50%;
-max-height: 100vh;
-gap: 5rem;
+    grid-template-rows: 50%;
+    max-height: 100vh;
+    gap: 5rem;
   }
 `;
 

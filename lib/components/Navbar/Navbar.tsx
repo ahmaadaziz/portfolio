@@ -12,6 +12,7 @@ import SocialButton from "../Buttons/SocialButton/SocialButton";
 import Box1 from "../../../public/Box1.jpeg";
 
 import { SlideDownVariants } from "@/lib/utils/variants";
+import { SlideDownEase } from "@/lib/utils/transitions";
 
 const Navbar = () => {
   return (
@@ -19,6 +20,7 @@ const Navbar = () => {
       variants={SlideDownVariants}
       initial="hidden"
       animate={"visible"}
+      transition={SlideDownEase}
     >
       <TopButton />
       <HamburgerButton />

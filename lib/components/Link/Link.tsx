@@ -3,6 +3,7 @@
 import { useGlobalContext } from "@/app/context/store";
 import { SlideUpFadeVariants } from "../../utils/variants";
 import LinkStyles from "./LinkStyles";
+import { SlideUpEase } from "@/lib/utils/transitions";
 
 interface Props {
   text: string;
@@ -18,6 +19,7 @@ const Link = ({ text, link }: Props) => {
       onMouseEnter={() => setCursorVariant("button")}
       onMouseLeave={() => setCursorVariant("default")}
       whileHover={{ letterSpacing: "1.5px" }}
+      transition={SlideUpEase}
     >
       {text}
     </LinkStyles>

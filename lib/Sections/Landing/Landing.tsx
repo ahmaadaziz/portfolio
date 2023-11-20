@@ -48,7 +48,7 @@ const Landing = () => {
             <BasicButton
               rounded
               text="About Me"
-              href="/abot"
+              href="/about"
               marginTop={true}
             />
           </IntroWrapper>

@@ -53,6 +53,7 @@ export const LandingContainerStyles = styled.div`
     right: 0%;
     transform: scale(1) translateY(-50px);
     animation: ${beforeAnim} 8s ease-in-out infinite alternate none running;
+    animation-delay: 1.9s;
   }
 `;
 
@@ -80,5 +81,6 @@ export const IntroContainerStyles = styled(motion.div)`
 
     transform: scale(1);
     animation: ${afterAnim} 10s ease-in-out infinite alternate none running;
+    animation-delay: 1.9s;
   }
 `;

@@ -1,9 +1,28 @@
-export const WrapperVariant = {
+import { Variants } from "framer-motion";
+
+export const PageIntroVariant: Variants = {
   visible: {
     opacity: 1,
     transition: {
       when: "beforeChildren",
-      staggerChildren: 0.3,
+      staggerChildren: 1,
+    },
+  },
+  hidden: {
+    opacity: 1,
+    transition: {
+      when: "afterChildren",
+    },
+  },
+};
+
+export const WrapperVariant: Variants = {
+  visible: {
+    opacity: 1,
+    transition: {
+      when: "beforeChildren",
+      staggerChildren: 0.4,
+      delayChildren: 1.3,
     },
   },
   hidden: {
@@ -14,17 +33,17 @@ export const WrapperVariant = {
   },
 };
 
-export const SlideUpVariants = {
+export const SlideUpVariants: Variants = {
   visible: { y: 0 },
   hidden: { y: 100 },
 };
 
-export const SlideUpFadeVariants = {
+export const SlideUpFadeVariants:Variants  = {
   visible: { opacity: 1, y: 0 },
   hidden: { opacity: 0, y: 100 },
 };
 
-export const ScaleUpVariants = {
+export const ScaleUpVariants: Variants = {
   hidden: {
     scale: 0,
   },
@@ -33,7 +52,7 @@ export const ScaleUpVariants = {
   },
 };
 
-export const SlideDownVariants = {
+export const SlideDownVariants: Variants = {
   hidden: {
     opacity: 0,
     y: -100,

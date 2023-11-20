@@ -19,6 +19,7 @@ import {
 
 import { useGlobalContext } from "@/app/context/store";
 import { IconStyleProps } from "../../SvgComp/SvgStyles";
+import { SlideDownEase } from "@/lib/utils/transitions";
 
 interface AllProps extends ButtonProps, Props, IconStyleProps {
   icon: IconProp;
@@ -47,6 +48,7 @@ const SocialButton = ({
     <Wrapper
       origin={origin}
       variants={ScaleUpVariants}
+      transition={{...SlideDownEase, delay: 0.7}}
       onMouseEnter={() => setCursorVariant("none")}
       onMouseLeave={() => setCursorVariant("default")}
     >
