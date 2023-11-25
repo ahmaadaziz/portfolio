@@ -3,6 +3,7 @@ import { Variants } from "framer-motion";
 export const PageIntroVariant: Variants = {
   visible: {
     opacity: 1,
+    height: "100vh",
     transition: {
       when: "beforeChildren",
       staggerChildren: 1,
@@ -10,6 +11,7 @@ export const PageIntroVariant: Variants = {
   },
   hidden: {
     opacity: 1,
+    height: "100vh",
     transition: {
       when: "afterChildren",
     },
@@ -35,7 +37,7 @@ export const WrapperVariant: Variants = {
 
 export const SlideUpVariants: Variants = {
   visible: { y: 0 },
-  hidden: { y: 100 },
+  hidden: { y: 150 },
 };
 
 export const SlideUpFadeVariants:Variants  = {

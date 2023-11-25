@@ -7,6 +7,7 @@ export interface Props {
   secondary?: boolean;
   marginTop?: boolean
   rounded?: boolean
+  hideOnMobile?: boolean
 }
 
 const BasicButtonStyles = styled(motion.a)<Props>`
@@ -29,6 +30,10 @@ const BasicButtonStyles = styled(motion.a)<Props>`
     height: 55px;
     display: grid;
     font-size: 18px;
+  }
+
+  @media (max-width: 451px) {
+    display: ${(props) => (props.hideOnMobile ? "none" : "grid")};
   }
 `;
 

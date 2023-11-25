@@ -55,7 +55,7 @@ const Landing = () => {
           <IntroWrapper width="100%">
             <MotionWrapper width="100%" pt="5rem" justify="space-between">
               <Heading2 text="Lets Work Together" boldness={400} />
-              <BasicButton text="Write an Email" href="/abot" />
+              <BasicButton hideOnMobile text="Write an Email" href="/abot" />
             </MotionWrapper>
           </IntroWrapper>
           <IntroWrapper width="100%">
