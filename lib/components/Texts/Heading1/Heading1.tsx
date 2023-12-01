@@ -6,13 +6,14 @@ import { SlideUpEase } from "@/lib/utils/transitions";
 
 interface Props extends HeadingProps, HeadingStyleProps, Heading1StyleProps {}
 
-const Heading1 = ({ text, mainHeading, boldness }: Props) => {
+const Heading1 = ({ text, mainHeading, boldness, isName }: Props) => {
   return (
     <Heading1Styles
       mainHeading={mainHeading}
       boldness={boldness}
       variants={SlideUpVariants}
       transition={SlideUpEase}
+      isName={isName}
     >
       {text}
     </Heading1Styles>

@@ -1,8 +1,12 @@
 "use client";
 
-import styled from "styled-components";
+import styled, { css } from "styled-components";
 import { motion } from "framer-motion";
 import { keyframes } from "styled-components";
+
+interface IntroContainerStyleProps {
+  showBgAnim?: boolean;
+}
 
 const beforeAnim = keyframes`
   from {
@@ -35,6 +39,7 @@ export const LandingContainerStyles = styled.div`
   position: relative;
   display: grid;
   place-items: center flex-start;
+  overflow: hidden;
 
   &::before {
     content: "";
@@ -57,13 +62,7 @@ export const LandingContainerStyles = styled.div`
   }
 `;
 
-export const IntroContainerStyles = styled(motion.div)`
-  width: 100%;
-  height: auto;
-  position: relative;
-  z-index: 4;
-  margin-bottom: 75px;
-
+const afterAnimComp = css`
   &::after {
     content: "";
     position: absolute;
@@ -83,4 +82,16 @@ export const IntroContainerStyles = styled(motion.div)`
     animation: ${afterAnim} 10s ease-in-out infinite alternate none running;
     animation-delay: 1.9s;
   }
+`;
+
+export const IntroContainerStyles = styled(
+  motion.div
+)<IntroContainerStyleProps>`
+  width: 100%;
+  height: auto;
+  position: relative;
+  z-index: 4;
+  margin-bottom: 75px;
+
+  ${({ showBgAnim }) => showBgAnim && afterAnimComp}
 `;

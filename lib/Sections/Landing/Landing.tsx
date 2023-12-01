@@ -26,6 +26,7 @@ const Landing = () => {
           variants={WrapperVariant}
           initial="hidden"
           animate={"visible"}
+          showBgAnim
         >
           <IntroWrapper>
             <Heading1
@@ -42,7 +43,7 @@ const Landing = () => {
             />
           </IntroWrapper>
           <IntroWrapper>
-            <Paragraph text="I am a Creative Developer and Web Designer specializing in creating web apps with clean user interface and optimized user experience." />
+            <Paragraph marginTop text="I am a Creative Developer and Web Designer specializing in creating web apps with clean user interface and optimized user experience." />
           </IntroWrapper>
           <IntroWrapper>
             <BasicButton

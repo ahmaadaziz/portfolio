@@ -3,7 +3,7 @@ import { Variants } from "framer-motion";
 export const PageIntroVariant: Variants = {
   visible: {
     opacity: 1,
-    height: "100vh",
+    height: "100%",
     transition: {
       when: "beforeChildren",
       staggerChildren: 1,
@@ -11,7 +11,7 @@ export const PageIntroVariant: Variants = {
   },
   hidden: {
     opacity: 1,
-    height: "100vh",
+    height: "100%",
     transition: {
       when: "afterChildren",
     },

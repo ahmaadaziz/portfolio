@@ -99,7 +99,6 @@ export default function RootLayout({
       <head />
       <body
         className={`${Tommy.className} ${Okine.className}`}
-        style={{ overflow: "hidden" }}
       >
         <StyledComponentsRegistry>
           <GlobalContextProvider>
