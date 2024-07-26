@@ -50,12 +50,11 @@ export const LandingContainerStyles = styled.div`
     z-index: 2;
     background-color: transparent;
     border: 1px solid rgba(91, 91, 91, 0);
-    transform: scale(0);
     transition: transform 1.75s ease-in-out 2.5s;
     will-change: transform;
 
     top: 20%;
-    right: 0%;
+    right: 0;
     transform: scale(1) translateY(-50px);
     animation: ${beforeAnim} 8s ease-in-out infinite alternate none running;
     animation-delay: 1.9s;
@@ -74,7 +73,7 @@ const afterAnimComp = css`
     border-radius: 50%;
     background-color: transparent;
     border: 1px solid rgba(91, 91, 91, 0);
-    transform: scale(0);
+    //transform: scale(0);
     transition: transform 1.75s ease-in-out 2.5s;
     will-change: transform;
 
@@ -88,10 +87,12 @@ export const IntroContainerStyles = styled(
   motion.div
 )<IntroContainerStyleProps>`
   width: 100%;
-  height: auto;
+  height: 100%;
   position: relative;
   z-index: 4;
-  margin-bottom: 75px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 
   ${({ showBgAnim }) => showBgAnim && afterAnimComp}
 `;

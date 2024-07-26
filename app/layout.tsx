@@ -3,7 +3,7 @@ import StyledComponentsRegistry from "@/lib/utils/registry";
 import localFont from "next/font/local";
 
 import { config } from "@fortawesome/fontawesome-svg-core";
-import "@fortawesome/fontawesome-svg-core/styles.css";
+import '../node_modules/@fortawesome/fontawesome-svg-core/styles.css'
 config.autoAddCss = false;
 
 import CustomCursor from "@/lib/components/CustomCursor";
@@ -96,7 +96,7 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <head />
+      <head title={"Ahmad Aziz"} />
       <body
         className={`${Tommy.className} ${Okine.className}`}
       >

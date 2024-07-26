@@ -14,6 +14,9 @@ const PageTransitionWrapper: FC<IProps> = ({ children }) => {
       variants={PageIntroVariant}
       initial={"hidden"}
       animate={"visible"}
+      style={{
+        marginBottom: "4rem"
+      }}
     >
       {children}
       <SlideInStyles

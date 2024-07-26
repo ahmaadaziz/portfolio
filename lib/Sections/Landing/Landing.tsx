@@ -28,44 +28,48 @@ const Landing = () => {
           animate={"visible"}
           showBgAnim
         >
-          <IntroWrapper>
-            <Heading1
-              text="Hi, I'm Ahmad Aziz"
-              boldness={400}
-              mainHeading={false}
-            />
-          </IntroWrapper>
-          <IntroWrapper>
-            <Heading1
-              text="I turn Ideas into Apps"
-              boldness={500}
-              mainHeading={true}
-            />
-          </IntroWrapper>
-          <IntroWrapper>
-            <Paragraph marginTop text="I am a Creative Developer and Web Designer specializing in creating web apps with clean user interface and optimized user experience." />
-          </IntroWrapper>
-          <IntroWrapper>
-            <BasicButton
-              rounded
-              text="About Me"
-              href="/about"
-              marginTop={true}
-            />
-          </IntroWrapper>
-          <IntroWrapper width="100%">
-            <MotionWrapper width="100%" pt="5rem" justify="space-between">
-              <Heading2 text="Lets Work Together" boldness={400} />
-              <BasicButton hideOnMobile text="Write an Email" href="/abot" />
-            </MotionWrapper>
-          </IntroWrapper>
-          <IntroWrapper width="100%">
-            <MotionWrapper justify="flex-end" width="100%" pt="1rem">
-              <SocialIconButton icon={faGithub} color="black" />
-              <SocialIconButton icon={faLinkedin} color="black" />
-              <SocialIconButton icon={faInstagram} color="black" />
-            </MotionWrapper>
-          </IntroWrapper>
+          <div style={{marginTop: "2rem"}}>
+            <IntroWrapper>
+              <Heading1
+                  text="Hi, I'm Ahmad Aziz"
+                  boldness={400}
+                  mainHeading={false}
+              />
+            </IntroWrapper>
+            <IntroWrapper>
+              <Heading1
+                  text="I turn Ideas into Apps"
+                  boldness={500}
+                  mainHeading={true}
+              />
+            </IntroWrapper>
+            <IntroWrapper>
+              <Paragraph marginTop text="I am a Creative Developer and Web Designer specializing in creating web apps with clean user interface and optimized user experience." />
+            </IntroWrapper>
+            <IntroWrapper>
+              <BasicButton
+                  rounded
+                  text="About Me"
+                  href="/about"
+                  marginTop={true}
+              />
+            </IntroWrapper>
+          </div>
+          <div>
+            <IntroWrapper width="100%">
+              <MotionWrapper width="100%" pt="5rem" justify="space-between">
+                <Heading2 sizeVariant={"small"} text="Lets Work Together" boldness={400} />
+                <BasicButton hideOnMobile text="Write an Email" href="/abot" />
+              </MotionWrapper>
+            </IntroWrapper>
+            <IntroWrapper width="100%">
+              <MotionWrapper justify="flex-end" width="100%" pt="1rem">
+                <SocialIconButton icon={faGithub} color="black" />
+                <SocialIconButton icon={faLinkedin} color="black" />
+                <SocialIconButton icon={faInstagram} color="black" />
+              </MotionWrapper>
+            </IntroWrapper>
+          </div>
         </IntroContainerStyles>
       </LandingContainerStyles>
     </HeroWrapper>

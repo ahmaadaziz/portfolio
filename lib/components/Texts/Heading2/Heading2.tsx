@@ -6,12 +6,14 @@ import { SlideUpEase } from "@/lib/utils/transitions";
 
 interface Props extends HeadingProps, HeadingStyleProps, IProps {}
 
-const Heading2 = ({ text, boldness }: Props) => {
+const Heading2 = ({ text, boldness, sizeVariant }: Props) => {
+  console.log("size: ", sizeVariant);
   return (
     <Heading2Styles
       boldness={boldness}
       variants={SlideUpVariants}
       transition={SlideUpEase}
+      sizeVariant={sizeVariant}
     >
       {text}
     </Heading2Styles>
