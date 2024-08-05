@@ -31,3 +31,9 @@ export const PageSlide: Transition = {
   ease: [0.22, 1, 0.36, 1],
   delay: 0.5,
 };
+
+export const ParaEnter: Transition = {
+  type: "tween",
+  ease: "easeOut",
+  duration: 0.55,
+};

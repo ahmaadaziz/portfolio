@@ -8,7 +8,7 @@ export interface Props {
 }
 
 export const Wrapper = styled(motion.div)<Props>`
-  border: 1px solid white;
+  border: 1px solid var(--background);
   cursor: pointer;
   width: 100%;
   transform-origin: ${(props) => props.origin + " 0px"};
@@ -41,7 +41,7 @@ export const Container = styled(motion.a)`
     height: 100%;
     margin: auto;
     opacity: 1;
-    background-color: rgb(0, 0, 0);
+    background-color: var(--accent);
     transition: opacity 0.8s cubic-bezier(0.445, 0.05, 0.55, 0.95) 0s;
   }
 

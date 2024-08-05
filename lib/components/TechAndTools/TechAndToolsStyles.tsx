@@ -28,4 +28,4 @@ export const TTItemStyles = styled(motion.p)<IProps>`
     opacity: 0.75;
     font-weight: 400;
     line-height: 1.4;
-`
+`;

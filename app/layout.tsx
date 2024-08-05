@@ -3,13 +3,15 @@ import StyledComponentsRegistry from "@/lib/utils/registry";
 import localFont from "next/font/local";
 
 import { config } from "@fortawesome/fontawesome-svg-core";
-import '../node_modules/@fortawesome/fontawesome-svg-core/styles.css'
+import "../node_modules/@fortawesome/fontawesome-svg-core/styles.css";
+
 config.autoAddCss = false;
 
 import CustomCursor from "@/lib/components/CustomCursor";
 import GlobalWrapper from "@/lib/components/Wrappers/GlobalWrapper/GlobalWrapper";
 import Navbar from "@/lib/components/Navbar/Navbar";
 import "./globals.css";
+import React from "react";
 
 //@ts-ignore
 // const TTCommons = localFont({ src: "./fonts/TTCommonsProVar.woff2" });
@@ -89,27 +91,24 @@ const Tommy = localFont({
   ],
 });
 
-export default function RootLayout({
-  children,
-}: {
+export default function RootLayout({ children }: {
   children: React.ReactNode;
 }) {
   return (
     <html lang="en">
-      <head title={"Ahmad Aziz"} />
-      <body
-        className={`${Tommy.className} ${Okine.className}`}
-      >
-        <StyledComponentsRegistry>
-          <GlobalContextProvider>
-            <CustomCursor />
-            <GlobalWrapper>
-                <Navbar />
-                {children}
-            </GlobalWrapper>
-          </GlobalContextProvider>
-        </StyledComponentsRegistry>
-      </body>
+    <body
+      className={`${Tommy.className} ${Okine.className}`}
+    >
+    <StyledComponentsRegistry>
+      <GlobalContextProvider>
+        <CustomCursor />
+        <GlobalWrapper>
+          <Navbar />
+          {children}
+        </GlobalWrapper>
+      </GlobalContextProvider>
+    </StyledComponentsRegistry>
+    </body>
     </html>
   );
 }

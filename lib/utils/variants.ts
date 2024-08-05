@@ -40,9 +40,14 @@ export const SlideUpVariants: Variants = {
   hidden: { y: 150 },
 };
 
-export const SlideUpFadeVariants:Variants  = {
+export const SlideUpFadeVariants: Variants = {
   visible: { opacity: 1, y: 0 },
   hidden: { opacity: 0, y: 100 },
+};
+
+export const ParaEnterVariants: Variants = {
+  visible: { opacity: 1, y: 0 },
+  hidden: { opacity: 0, y: 50 },
 };
 
 export const ScaleUpVariants: Variants = {

@@ -11,8 +11,8 @@ const NavbarStyles = styled(motion.div)`
   -moz-box-align: center;
   align-items: center;
   position: sticky;
-  top: 0px;
-  background-color: rgba(249, 242, 237, 0.75);
+  top: 0;
+  background-color: rgba(10, 10, 10, 0.75);
   backdrop-filter: blur(4px);
   z-index: 5;
 `;

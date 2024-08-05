@@ -11,10 +11,10 @@ const TopButton = () => {
 
   const circleVariants = {
     default: {
-      border: "1.6px solid black",
+      border: "1.6px solid var(--text)",
     },
     hovered: {
-      border: "6px solid black",
+      border: "6px solid var(--text)",
       scale: 1.15,
     },
   };

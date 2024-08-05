@@ -3,10 +3,17 @@ import { IProps as Heading1StyleProps } from "@/lib/components/Texts/Heading1/He
 import { SlideUpVariants } from "@/lib/utils/variants";
 import { HeadingProps, HeadingStyleProps } from "../HeadingProps";
 import { SlideUpEase } from "@/lib/utils/transitions";
+import styled from "styled-components";
 
-interface Props extends HeadingProps, HeadingStyleProps, Heading1StyleProps {}
+const NameTag = styled.span`
+    color: var(--primary);
+`;
 
-const Heading1 = ({ text, mainHeading, boldness, isName }: Props) => {
+interface Props extends HeadingProps, HeadingStyleProps, Heading1StyleProps {
+  name?: string;
+}
+
+const Heading1 = ({ text, mainHeading, boldness, isName, name }: Props) => {
   return (
     <Heading1Styles
       mainHeading={mainHeading}
@@ -15,7 +22,7 @@ const Heading1 = ({ text, mainHeading, boldness, isName }: Props) => {
       transition={SlideUpEase}
       isName={isName}
     >
-      {text}
+      {text}{name ? <NameTag> {name}</NameTag> : ""}
     </Heading1Styles>
   );
 };

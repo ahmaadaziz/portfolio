@@ -1,7 +1,8 @@
 :root {
-  --grey: #7e8387;
-  --grey2: #5a5755;
-  --bg: #f8f1ec;
+  --text: #ecf3f8;
+  --accent: #5a5755;
+  --background: #0a0a0a;
+  --primary: #91c7ed;
 }
 
 * {
@@ -12,9 +13,9 @@
 }
 
 body {
-  color: black;
-  height: 100vh;
-  background-color: var(--bg);
+  color: var(--text);
+  height: 100%;
+  background-color: var(--background);
 }
 
 a {

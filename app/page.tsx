@@ -1,4 +1,4 @@
-"use client"
+"use client";
 
 import Landing from "@/lib/Sections/Landing/Landing";
 import PageTransitionWrapper from "@/lib/components/Wrappers/PageTrasitionWrapper/PageTransitionWrapper";

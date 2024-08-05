@@ -27,7 +27,7 @@ export const Circle = styled(motion.div)`
     position: absolute;
     inset: 0px;
     margin: auto;
-    border: 2px solid rgb(0, 0, 0);
+    border: 2px solid var(--text);
     border-radius: 50%;
     transition: opacity 0.09s cubic-bezier(0.39, 0.575, 0.565, 1) 0s;
   }

@@ -9,14 +9,14 @@ import { SlideUpEase } from "@/lib/utils/transitions";
 
 interface IProps extends Props, ButtonProps {}
 
-const BasicButton = ({ secondary, text, href, marginTop, rounded, hideOnMobile }: IProps) => {
+const BasicButton = ({ primary, text, href, marginTop, rounded, hideOnMobile }: IProps) => {
   const { setCursorVariant } = useGlobalContext();
   return (
     <BasicButtonStyles
       href={href}
       variants={SlideUpVariants}
       rounded={rounded}
-      secondary={secondary}
+      primary={primary}
       marginTop={marginTop}
       hideOnMobile={hideOnMobile}
       onMouseEnter={() => setCursorVariant("button")}

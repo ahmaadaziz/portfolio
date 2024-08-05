@@ -11,8 +11,8 @@ const NavMenuStyles = styled(motion.div)`
   top: 0px;
   z-index: 6;
   position: fixed;
-  background-color: rgb(249, 242, 237);
-  transform-origin: center top 0px;
+  background-color: var(--background);
+  transform-origin: center top 0;
   will-change: transform;
 `;
 

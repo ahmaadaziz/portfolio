@@ -23,11 +23,11 @@ export const LineOne = styled(motion.div)`
   cursor: pointer;
   position: absolute;
   width: 100%;
-  background-color: rgb(0, 0, 0);
+  background-color: var(--text);
 `;
 
 export const LineTwo = styled(motion.div)`
   cursor: pointer;
   position: absolute;
-  background-color: rgb(0, 0, 0);
+  background-color: var(--text);
 `;

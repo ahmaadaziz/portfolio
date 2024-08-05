@@ -8,15 +8,7 @@ import IntroWrapper from "../../components/Wrappers/IntroWrapper/IntroWrapper";
 import BasicButton from "../../components/Buttons/BasicButton/BasicButton";
 import Heading1 from "../../components/Texts/Heading1/Heading1";
 import Paragraph from "../../components/Texts/Paragraph/Paragraph";
-import Heading2 from "@/lib/components/Texts/Heading2/Heading2";
-import {
-  faGithub,
-  faLinkedin,
-  faInstagram,
-} from "@fortawesome/free-brands-svg-icons";
-
-import SocialIconButton from "@/lib/components/Buttons/SocialIconButton/SocialIconButton";
-import MotionWrapper from "@/lib/components/Wrappers/MotionWrapper/MotionWrapper";
+import Footer from "@/lib/components/Footer/Footer";
 
 const Landing = () => {
   return (
@@ -28,48 +20,58 @@ const Landing = () => {
           animate={"visible"}
           showBgAnim
         >
-          <div style={{marginTop: "2rem"}}>
+          <div style={{ marginTop: "2rem" }}>
             <IntroWrapper>
               <Heading1
-                  text="Hi, I'm Ahmad Aziz"
-                  boldness={400}
-                  mainHeading={false}
+                text="Hi, I'm"
+                boldness={400}
+                mainHeading={false}
+                name={"Ahmad Aziz"}
               />
             </IntroWrapper>
             <IntroWrapper>
               <Heading1
-                  text="I turn Ideas into Apps"
-                  boldness={500}
-                  mainHeading={true}
+                text="I turn Ideas into Apps"
+                boldness={500}
+                mainHeading={true}
               />
             </IntroWrapper>
             <IntroWrapper>
-              <Paragraph marginTop text="I am a Creative Developer and Web Designer specializing in creating web apps with clean user interface and optimized user experience." />
+              <Paragraph marginTop
+                         text="I am a Creative Developer and Web Designer specializing in creating web apps with clean user interface and optimized user experience." />
             </IntroWrapper>
-            <IntroWrapper>
+            <IntroWrapper smallGap>
               <BasicButton
-                  rounded
-                  text="About Me"
-                  href="/about"
-                  marginTop={true}
+                rounded
+                text="About Me"
+                href="/about"
+                marginTop={true}
+              />
+              <BasicButton
+                primary
+                text="Résumé"
+                marginTop={true}
               />
             </IntroWrapper>
+            {/*<IntroWrapper>*/}
+            {/*</IntroWrapper>*/}
           </div>
-          <div>
-            <IntroWrapper width="100%">
-              <MotionWrapper width="100%" pt="5rem" justify="space-between">
-                <Heading2 sizeVariant={"small"} text="Lets Work Together" boldness={400} />
-                <BasicButton hideOnMobile text="Write an Email" href="/abot" />
-              </MotionWrapper>
-            </IntroWrapper>
-            <IntroWrapper width="100%">
-              <MotionWrapper justify="flex-end" width="100%" pt="1rem">
-                <SocialIconButton icon={faGithub} color="black" />
-                <SocialIconButton icon={faLinkedin} color="black" />
-                <SocialIconButton icon={faInstagram} color="black" />
-              </MotionWrapper>
-            </IntroWrapper>
-          </div>
+          {/*<div>*/}
+          {/*  <IntroWrapper width="100%">*/}
+          {/*    <MotionWrapper width="100%" pt="5rem" justify="space-between">*/}
+          {/*      <Heading2 sizeVariant={"small"} text="Lets Work Together" boldness={400} />*/}
+          {/*      <BasicButton hideOnMobile text="Write an Email" href="/abot" />*/}
+          {/*    </MotionWrapper>*/}
+          {/*  </IntroWrapper>*/}
+          {/*  <IntroWrapper width="100%">*/}
+          {/*    <MotionWrapper justify="flex-end" width="100%" pt="1rem">*/}
+          {/*      <SocialIconButton icon={faGithub} color="black" />*/}
+          {/*      <SocialIconButton icon={faLinkedin} color="black" />*/}
+          {/*      <SocialIconButton icon={faInstagram} color="black" />*/}
+          {/*    </MotionWrapper>*/}
+          {/*  </IntroWrapper>*/}
+          {/*</div>*/}
+          <Footer animateOnView={false} />
         </IntroContainerStyles>
       </LandingContainerStyles>
     </HeroWrapper>

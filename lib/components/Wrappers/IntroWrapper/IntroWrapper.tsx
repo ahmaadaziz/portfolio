@@ -7,17 +7,22 @@ import IntroWrapperStyles from "@/lib/components/Wrappers/IntroWrapper/IntroWrap
 
 interface IProps extends StyleProps {
   children: ReactNode;
-  inNav?: Boolean;
+  inNav?: boolean;
+  animateOnView?: boolean;
 }
 
-const IntroWrapper = ({ children, direction, width, mt, inNav }: IProps) => (
+const IntroWrapper = ({ children, direction, width, mt, inNav, animateOnView, smallGap }: IProps) => (
   <IntroWrapperStyles
     variants={inNav ? WrapperVariant : undefined}
     direction={direction}
     mt={mt}
     width={width}
-    initial={inNav ? "hidden" : undefined}
+    initial={inNav || animateOnView ? "hidden" : undefined}
     animate={inNav ? "visible" : undefined}
+    whileInView={animateOnView ? "visible" : undefined}
+    viewport={animateOnView ? { once: true } : undefined}
+    overflowHidden={!animateOnView}
+    smallGap={smallGap}
   >
     {children}
   </IntroWrapperStyles>

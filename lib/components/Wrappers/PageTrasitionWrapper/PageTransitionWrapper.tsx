@@ -21,7 +21,7 @@ const PageTransitionWrapper: FC<IProps> = ({ children }) => {
       {children}
       <SlideInStyles
         key={"slide-in"}
-        initial={{ scaleY: 0 }}
+        initial={{ scaleY: 1 }}
         animate={{ scaleY: 0 }}
         exit={{ scaleY: 1 }}
         transition={PageSlide}

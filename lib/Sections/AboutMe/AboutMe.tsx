@@ -28,36 +28,30 @@ const AboutMe = () => {
               <Heading1 text="Ahmad Aziz" boldness={400} isName={true} />
             </IntroWrapper>
           </div>
-          <IntroWrapper>
-            <Paragraph
-              text="lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud"
-              isSubheading={true}
-              maxWidth="100%"
-            />
-          </IntroWrapper>
+          <Paragraph
+            text="lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud"
+            isSubheading={true}
+            maxWidth="100%"
+          />
           <div
             style={{
               marginTop: "2.5rem",
             }}
           >
-            <IntroWrapper>
-              <Paragraph
-                maxWidth="100%"
-                text="lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud"
-              />
-            </IntroWrapper>
+            <Paragraph
+              maxWidth="100%"
+              text="lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud"
+            />
           </div>
           <div
             style={{
               marginTop: "2.5rem",
             }}
           >
-            <IntroWrapper>
-              <Paragraph
-                maxWidth="100%"
-                text="lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud"
-              />
-            </IntroWrapper>
+            <Paragraph
+              maxWidth="100%"
+              text="lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud"
+            />
           </div>
         </IntroContainerStyles>
       </AboutMeStyles>
