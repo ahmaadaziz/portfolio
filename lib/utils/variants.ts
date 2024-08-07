@@ -93,3 +93,28 @@ export const BackgroundRotateVariants = (path: string | undefined) => {
     },
   };
 };
+
+export const ProjectItemTextVariants: Variants = {
+  rest: {
+    fontVariationSettings: "'wdth' 100, 'wght' 450"
+  },
+  hover: {
+    fontVariationSettings: "'wdth' 110, 'wght' 600"
+  }
+}
+
+export const ProjectItemArrowVariants: Variants = {
+  rest: {
+    x: 0,
+    opacity: 1,
+  },
+  hover: {
+    x: [0, 200, -200, 0],
+    opacity: [1, 0, 0, 1],
+    transition: {
+      duration: 0.5,
+      type: "tween",
+      ease: "easeInOut",
+    },
+  },
+}

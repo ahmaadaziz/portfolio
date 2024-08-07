@@ -1,5 +1,3 @@
-"use client";
-
 import { IconProp } from "@fortawesome/fontawesome-svg-core";
 import Svg from "../../SvgComp/Svg";
 
@@ -18,6 +16,8 @@ const SocialIconButton = ({ color, icon, cursor }: AllProps) => {
     <SocialIconButtonStyles
       onMouseEnter={() => setCursorVariant("button")}
       onMouseLeave={() => setCursorVariant("default")}
+      initial={{ color: "var(--accent)" }}
+      whileHover={{ color: "var(--text)" }}
     >
       <Svg cursor={false} color={color} icon={icon} />
     </SocialIconButtonStyles>

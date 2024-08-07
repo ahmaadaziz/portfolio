@@ -15,6 +15,6 @@ const ParagraphStyles = styled(motion.p)<ParagraphStyleProps>`
     isSubheading ? "clamp(1.5rem, 6vw, 2rem)" : "clamp(1.25rem, 4vw, 1.5rem)"};
   margin-top: ${({ marginTop }) => (marginTop ? "1.5rem" : "0")};
   line-height: 1.28;
-  font-weight: 300;
+  font-weight: 400;
 `;
 export default ParagraphStyles;

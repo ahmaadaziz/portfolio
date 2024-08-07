@@ -32,7 +32,7 @@ const techAndToolsItems = [
 const TechAndTools: FC<IProps> = () => {
   return <TechAndToolsContainer>
     {techAndToolsItems.map(({ name }) => <IntroWrapper animateOnView>
-      <TTItem name={name} />
+      <TTItem key={name} name={name} />
     </IntroWrapper>)}
   </TechAndToolsContainer>;
 };

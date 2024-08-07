@@ -24,7 +24,7 @@ const Landing = () => {
             <IntroWrapper>
               <Heading1
                 text="Hi, I'm"
-                boldness={400}
+                boldness={500}
                 mainHeading={false}
                 name={"Ahmad Aziz"}
               />

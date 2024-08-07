@@ -7,6 +7,7 @@ import styled from "styled-components";
 
 const NameTag = styled.span`
     color: var(--primary);
+    font-weight: 550;
 `;
 
 interface Props extends HeadingProps, HeadingStyleProps, Heading1StyleProps {

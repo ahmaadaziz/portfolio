@@ -13,83 +13,8 @@ import Navbar from "@/lib/components/Navbar/Navbar";
 import "./globals.css";
 import React from "react";
 
-//@ts-ignore
-// const TTCommons = localFont({ src: "./fonts/TTCommonsProVar.woff2" });
-
-const Okine = localFont({
-  src: [
-    {
-      path: "./fonts/MADEOkineSansPERSONALUSE-Black.otf",
-      weight: "900",
-      style: "normal",
-    },
-    {
-      path: "./fonts/MADEOkineSansPERSONALUSE-Bold.otf",
-      weight: "700",
-      style: "normal",
-    },
-    {
-      path: "./fonts/MADEOkineSansPERSONALUSE-Medium.otf",
-      weight: "500",
-      style: "normal",
-    },
-    {
-      path: "./fonts/MADEOkineSansPERSONALUSE-Regular.otf",
-      weight: "400",
-      style: "normal",
-    },
-    {
-      path: "./fonts/MADEOkineSansPERSONALUSE-Light.otf",
-      weight: "300",
-      style: "normal",
-    },
-    {
-      path: "./fonts/MADEOkineSansPERSONALUSE-Thin.otf",
-      weight: "100",
-      style: "normal",
-    },
-  ],
-});
-
-const Tommy = localFont({
-  src: [
-    {
-      path: "./fonts/MADE TOMMY Black_PERSONAL USE.otf",
-      weight: "900",
-      style: "black",
-    },
-    {
-      path: "./fonts/MADE TOMMY ExtraBold_PERSONAL USE.otf",
-      weight: "800",
-      style: "bolder",
-    },
-    {
-      path: "./fonts/MADE TOMMY Bold_PERSONAL USE.otf",
-      weight: "700",
-      style: "bold",
-    },
-    {
-      path: "./fonts/MADE TOMMY Medium_PERSONAL USE.otf",
-      weight: "500",
-      style: "medium",
-    },
-    {
-      path: "./fonts/MADE TOMMY Regular_PERSONAL USE.otf",
-      weight: "400",
-      style: "normal",
-    },
-    {
-      path: "./fonts/MADE TOMMY Light_PERSONAL USE.otf",
-      weight: "300",
-      style: "light",
-    },
-    {
-      path: "./fonts/MADE TOMMY Thin_PERSONAL USE.otf",
-      weight: "100",
-      style: "lighter",
-    },
-  ],
-});
+const Satoshi = localFont({ src: "./fonts/Satoshi-Variable.woff2" });
+const TT = localFont({ src: "./fonts/TTCommonsProVar.woff2" });
 
 export default function RootLayout({ children }: {
   children: React.ReactNode;
@@ -97,7 +22,7 @@ export default function RootLayout({ children }: {
   return (
     <html lang="en">
     <body
-      className={`${Tommy.className} ${Okine.className}`}
+      className={`${TT.className} ${Satoshi.className}`}
     >
     <StyledComponentsRegistry>
       <GlobalContextProvider>

@@ -22,6 +22,7 @@ const BasicButton = ({ primary, text, href, marginTop, rounded, hideOnMobile }: 
       onMouseEnter={() => setCursorVariant("button")}
       onMouseLeave={() => setCursorVariant("default")}
       whileTap={{ scale: 0.9 }}
+      whileHover={{ fontWeight: 500 }}
       transition={SlideUpEase}
     >
       {text}

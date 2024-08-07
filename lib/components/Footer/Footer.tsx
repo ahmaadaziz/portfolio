@@ -25,9 +25,9 @@ const Footer: FC<FooterProps> = ({animateOnView, aboutMeFooter}) => {
         </IntroWrapper>
         <IntroWrapper animateOnView={animateOnView} width="100%">
             <MotionWrapper justify="flex-end" width="100%" pt="1rem">
-                <SocialIconButton icon={faGithub} color="var(--accent)"/>
-                <SocialIconButton icon={faLinkedin} color="var(--accent)"/>
-                <SocialIconButton icon={faInstagram} color="var(--accent)"/>
+                <SocialIconButton icon={faGithub} color="inherit"/>
+                <SocialIconButton icon={faLinkedin} color="inherit"/>
+                <SocialIconButton icon={faInstagram} color="inherit"/>
             </MotionWrapper>
         </IntroWrapper>
     </div>
